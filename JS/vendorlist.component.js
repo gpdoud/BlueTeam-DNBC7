@@ -17,7 +17,7 @@ function refresh(vendors){
         tr += `<td>${vendor.zip}</td>`
         tr += `<td>${vendor.phone}</td>`
         tr += `<td>${vendor.email}</td>`
-        tr += `<td>${user.isActive ? "Yes" : "No"}</td>`
+        tr += `<td>${vendor.isActive ? "Yes" : "No"}</td>`
         tr +="</tr>";
         tbodyCtrl.innerHTML += tr;
     }

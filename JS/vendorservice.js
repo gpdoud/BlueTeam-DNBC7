@@ -1,3 +1,5 @@
+const url = "http://localhost:54318/api/vendors";
+
 let VendorService = {}
 
 VendorService.list = () => {

@@ -41,6 +41,6 @@ const get = (id) => {
         $("#pzip").val(vendor.zip);
         $("#pphone").val(vendor.phone);
         $("#pemail").val(vendor.email);
-        $("#pactive").prop("checked", user.active);
+        $("#pactive").prop("checked", vendor.active);
     });
 };
