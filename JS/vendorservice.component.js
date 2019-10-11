@@ -32,11 +32,12 @@ VendorService.update = (vendor) => {
     });
 }
 
-VendorService.delete = (id) => {
+
+VendorService.delete = (vendor) => {
     return $.ajax ({
         method: "DELETE",
         url: `${url}/${vendor.id}`,
-        data: JSON.stringify(user),
+        data: JSON.stringify(vendor),
         dataType: "json",
         crossOrigin: true,
         contentType: "application/json"
