@@ -1,12 +1,22 @@
-let urlparms = {};
+// let urlparms = {};
+
+//  $().ready(() => {
+//      let urlparms = Utilities.parseUrlParameter(document.url);
+//      $(".heading").css("fontWeight", "bold");
+//      $("button").click(() => {
+//          getUser();
+//      });
+// }); 
 
 $().ready(() => {
-    let urlparms = Utilities.parseUrlParameter(document.url);
-    $(".heading").css("fontWeight", "bold");
-    //$("button").click(() => {
-      //  getUser();
-    //});
+    $("button").click(() => {
+        getVendor();
+    });
 });
+
+
+
+
 
 const refresh = (vendor) => {
     $("#pid").text(vendor.id);
